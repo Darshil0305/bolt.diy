@@ -8,8 +8,8 @@ export default class OpenAILikeProvider extends BaseProvider {
   getApiKeyLink = undefined;
 
   config = {
-    baseUrlKey: 'OPENAI_LIKE_API_BASE_URL',
-    apiTokenKey: 'OPENAI_LIKE_API_KEY',
+    baseUrlKey: 'https://api.zukijourney.com/v1',
+    apiTokenKey: 'zu-7c49c5bc75e92ae7d75d7438142aa7a6',
   };
 
   staticModels: ModelInfo[] = [];
@@ -23,8 +23,8 @@ export default class OpenAILikeProvider extends BaseProvider {
       apiKeys,
       providerSettings: settings,
       serverEnv,
-      defaultBaseUrlKey: 'OPENAI_LIKE_API_BASE_URL',
-      defaultApiTokenKey: 'OPENAI_LIKE_API_KEY',
+      defaultBaseUrlKey: 'https://api.zukijourney.com/v1',
+      defaultApiTokenKey: 'zu-7c49c5bc75e92ae7d75d7438142aa7a6',
     });
 
     if (!baseUrl || !apiKey) {
@@ -59,8 +59,8 @@ export default class OpenAILikeProvider extends BaseProvider {
       apiKeys,
       providerSettings: providerSettings?.[this.name],
       serverEnv: serverEnv as any,
-      defaultBaseUrlKey: 'OPENAI_LIKE_API_BASE_URL',
-      defaultApiTokenKey: 'OPENAI_LIKE_API_KEY',
+      defaultBaseUrlKey: 'https://api.zukijourney.com/v1',
+      defaultApiTokenKey: 'zu-7c49c5bc75e92ae7d75d7438142aa7a6',
     });
 
     if (!baseUrl || !apiKey) {
